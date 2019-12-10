@@ -84,15 +84,21 @@
 
       <li class="active treeview">
         <a href="#">
-          <i class="fa fa-shopping-cart"></i> <span>Data Barang</span>
+          <i class="fa fa-dropbox"></i> <span>Data Produk</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="<?= base_url("dashboard/barang") ?>"><i class="fa fa-circle-o"></i> Data Produk</a></li>
+          <li><a href="<?= base_url("dashboard/barang") ?>"><i class="fa fa-circle-o"></i> Produk</a></li>
           <li><a href="<?= base_url("dashboard/bahan-produk") ?>"><i class="fa fa-circle-o"></i> Bahan Produk</a></li>
         </ul>
+      </li>
+
+      <li>
+        <a href="<?= base_url("dashboard/kelola-barang") ?>">
+          <i class="fa fa-gears"></i> <span>Kelola Bahan Produk</span>
+        </a>
       </li>
 
       <li>

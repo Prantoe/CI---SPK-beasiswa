@@ -25,17 +25,72 @@
           <div class="row">
 
             <div class="col-xs-12">
-              <div class="box">
+              <div class="box box-success">
                 <div class="box-header">
                   <h3 class="box-title">Data Kain</h3>
+                  <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                  </div>
                 </div>
                 <div class="box-body">
                   <table id="tableKain" class="table table-bordered table-hover">
                     <thead>
                       <tr>
                         <th>#NO</th>
-                        <th>Nama</th>
+                        <th>Nama Kain</th>
                         <th>Warna</th>
+                        <th>Harga</th>
+                        <th>ACTION</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6">
+              <div class="box box-success">
+                <div class="box-header">
+                  <h3 class="box-title">Model Kain</h3>
+                  <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                  </div>
+                </div>
+                <div class="box-body">
+                  <table id="tableModel" class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>#NO</th>
+                        <th>Nama Model</th>
+                        <th>Harga</th>
+                        <th>ACTION</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6">
+              <div class="box box-success">
+                <div class="box-header">
+                  <h3 class="box-title">Ukuran Tersedia</h3>
+                  <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                  </div>
+                </div>
+                <div class="box-body">
+                  <table id="tableUkuran" class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>#NO</th>
+                        <th>Ukuran</th>
                         <th>Harga</th>
                         <th>ACTION</th>
                       </tr>
@@ -58,6 +113,8 @@
     <?php $this->load->view("templates/script") ?>
     <script type="text/javascript">
       $("#tableKain").DataTable();
+      $("#tableModel").DataTable();
+      $("#tableUkuran").DataTable();
     </script>
   </body>
 </html>

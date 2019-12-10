@@ -10,4 +10,7 @@ class Barang extends CI_Controller{
   public function bahanProduk(){
     $this->load->view("admin/BahanProduk_v");
   }
+  public function kelolaBarang(){
+    $this->load->view("admin/kelolaProduk_v");
+  }
 }
