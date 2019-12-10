@@ -17,11 +17,13 @@
       <ul class="nav navbar-nav">
         <li class="dropdown user user-menu">
           <a href="<?= base_url("dashboard") ?>" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="<?= base_url("assets/profile.jpg") ?>" class="user-image" alt="User Image">
             <span class="hidden-xs">Alexander Pierce</span>
           </a>
           <ul class="dropdown-menu">
             <!-- User image -->
             <li class="user-header">
+              <img src="<?= base_url("assets/profile.jpg") ?>" class="img-circle" alt="User Image">
               <p>
                 Alexander Pierce - Web Developer
                 <small>Member since Nov. 2012</small>
@@ -31,10 +33,10 @@
             <!-- Menu Footer-->
             <li class="user-footer">
               <div class="pull-left">
-                <a href="#" class="btn btn-default btn-flat">Profile</a>
+                <a href="#" class="btn btn-default btn-flat">Lihat Toko</a>
               </div>
               <div class="pull-right">
-                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                <a href="<?= base_url("dashboard/sign-out") ?>" class="btn btn-default btn-flat">Sign out</a>
               </div>
             </li>
           </ul>
@@ -55,7 +57,7 @@
     <!-- Sidebar user panel -->
     <div class="user-panel">
       <div class="pull-left image">
-        <img src="<?= base_url("assets/profile.png") ?>" class="img-circle" alt="User Image">
+        <img src="<?= base_url("assets/profile.jpg") ?>" class="img-circle" alt="User Image">
       </div>
       <div class="pull-left info">
         <p>Pamor Candra</p>
@@ -109,6 +111,11 @@
       <li>
         <a href="">
           <i class="fa fa-shopping-cart"></i> <span>New Order</span>
+        </a>
+      </li>
+      <li>
+        <a href="<?= base_url("dashboard/customers") ?>">
+          <i class="fa fa-users"></i> <span>Customers</span>
         </a>
       </li>
 

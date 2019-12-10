@@ -40,11 +40,22 @@
                         <th>Nama Kain</th>
                         <th>Warna</th>
                         <th>Harga</th>
-                        <th>ACTION</th>
+                        <th>Action</th>
                       </tr>
                     </thead>
                     <tbody>
-
+                      <?php foreach($dataKain as $key => $row): ?>
+                        <tr>
+                          <td><?= $key + 1 ?></td>
+                          <td><?= $row['nm_kain'] ?></td>
+                          <td><?= $row['warna_kain'] ?></td>
+                          <td><?= $row['harga_kain'] ?></td>
+                          <td>
+                            <a href="" class="btn btn-info btn-xs">Edit</a>
+                            <a href="" class="btn btn-danger btn-xs">Delete</a>
+                          </td>
+                        </tr>
+                      <?php endforeach ?>
                     </tbody>
                   </table>
                 </div>
@@ -66,11 +77,21 @@
                         <th>#NO</th>
                         <th>Nama Model</th>
                         <th>Harga</th>
-                        <th>ACTION</th>
+                        <th>Action</th>
                       </tr>
                     </thead>
                     <tbody>
-
+                        <?php foreach($dataModel as $key => $row): ?>
+                          <tr>
+                            <td><?= $key + 1 ?></td>
+                            <td><?= $row["nm_model"] ?></td>
+                            <td><?= $row["harga_model"] ?></td>
+                            <td>
+                              <a href="" class="btn btn-info btn-xs">Edit</a>
+                              <a href="" class="btn btn-danger btn-xs">Delete</a>
+                            </td>
+                          </tr>
+                        <?php endforeach; ?>
                     </tbody>
                   </table>
                 </div>
@@ -92,11 +113,21 @@
                         <th>#NO</th>
                         <th>Ukuran</th>
                         <th>Harga</th>
-                        <th>ACTION</th>
+                        <th>Action</th>
                       </tr>
                     </thead>
                     <tbody>
-
+                      <?php foreach($dataUkuran as $key => $row): ?>
+                        <tr>
+                          <td><?= $key + 1 ?></td>
+                          <td><?= $row["kd_ukuran"] ?></td>
+                          <td><?= $row["harga_ukuran"] ?></td>
+                          <td>
+                            <a href="" class="btn btn-info btn-xs">Edit</a>
+                            <a href="" class="btn btn-danger btn-xs">Delete</a>
+                          </td>
+                        </tr>
+                      <?php endforeach; ?>
                     </tbody>
                   </table>
                 </div>

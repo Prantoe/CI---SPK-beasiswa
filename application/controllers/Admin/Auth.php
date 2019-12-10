@@ -3,7 +3,7 @@
 class Auth extends CI_Controller{
     public function __construct(){
         parent:: __construct();
-        // var_dump(checkAuth());
+        (checkAuth() ? redirect("dashboard") : true );
         $this->load->model("admin/Account","account");
     }
     public function login(){
